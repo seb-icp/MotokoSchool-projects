@@ -1,0 +1,135 @@
+*, ::before , ::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 30px 0;
+    font-size: 40px;;
+}
+
+.container-global {
+    width: 70%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-color: brown; */
+}
+
+.question-block {
+    padding: 15px 25px 25px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.question-block h4 {
+    padding: 7px 0px;
+    font-size: 18px;
+}
+
+.question-block input[type="radio"] {
+    transform: scale(1.7);
+    margin : 10px;
+}
+
+.resultats {
+    padding: 25px;
+    margin: 10px 0px 70px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.resultats h2 {
+    text-align: center;
+}
+
+.help {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.note {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+form button {
+    border:none;
+    outline:none;
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: block;
+    margin: 25px auto;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.2 ease-in-out;
+
+
+}
+
+form button:hover {
+    background-color: lightblue;
+}
+
+.echec {
+    animation: echec 0.3s ease-in-out;
+    
+}
+
+.test {
+    background-color: pink;
+}
+
+@keyframes echec {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(5px);
+    }
+    66% {
+        transform: translateX(-5px);
+    }
+    10% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+#hidden-question-block {
+    padding: 15px 25px 25px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    opacity:0; 
+    filter:alpha(opacity=0);
+
+}
+
+#hidden-question-block h4 {
+    padding: 7px 0px;
+    font-size: 18px;
+}
+
+#hidden-question-block input[type="radio"] {
+    transform: scale(1.7);
+    margin : 10px;
+}
+
+#hidden-question-block:hover {
+    opacity : 1;
+    
+}
