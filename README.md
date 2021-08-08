@@ -1,5 +1,5 @@
 # Motoko-School-projetcts
-A list of projects for Motoko School, annex to the website (other repo). 
+A list of projects for Motoko School, extension to the website (other repo). 
 
 Quizz 1 : Simple front-end app.
 
