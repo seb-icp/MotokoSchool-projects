@@ -1,0 +1,8 @@
+{
+    "canisters" : {
+        "quizz" : {
+            "type" : "assets",
+            "source" : ["public"]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+type result = vec nat;
+type quizz = 
+ service {
+   PotentialWinners: () -> (vec text);
+   alreadyGotToken: (PrincipalTextual) -> (bool);
+   distribute: (PrincipalTextual) -> (Result);
+   meOutsideWorld: () -> (principal);
+   quizzFinished: (text, result) -> (nat32);
+   showAStudent: (nat32) -> (opt Student);
+   statisticsStudents: () -> (vec nat32);
+ };
+type Student = 
+ record {
+   id: nat32;
+   name: text;
+   note: nat32;
+ };
+type Result = 
+ variant {
+   err;
+   ok;
+ };
+type PrincipalTextual = text;
+service : () -> quizz

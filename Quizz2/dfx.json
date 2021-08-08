@@ -1,0 +1,16 @@
+{
+  "canisters": {
+    "quizz": {
+      "main": "src/quizz/main.mo",
+      "type": "motoko"
+    },
+    "quizz_assets": {
+      "dependencies": ["quizz"],
+      "frontend": {
+        "entrypoint": "src/quizz_assets/src/index.html"
+      },
+      "source": ["src/quizz_assets/assets", "dist/quizz_assets"],
+      "type": "assets"
+    }
+  }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Quizz</title>
+  </head>
+  <body>
+    <h1 id="Title"> Internet Computer : Quizz number 2 ! 👨‍🏫 </h1>
+        <div class="container-global">
+            <form class="quizz-form">
+                <div class="question-block">
+                    <h4> Where does the name Motoko comes from ? </h4>
+                    <div>
+                        <input type="radio" id="updat" name="q1" value="0" checked>
+                        <label for="update">  A reference to Satoshi Nakamoto </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="submit" name="q1" value="1">
+                        <label for="submit"> It comes from Ghost in the shell.</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="query" name="q1" value="2">
+                        <label for="query"> Motoko is the second name of Andreas Rossberg, one of the architect of the Motoko language.</label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What is a stable variable in Motoko ? </h4>
+                    <div>
+                        <input type="radio" id="immutable" name="q2" value="0" checked>
+                        <label for="immutable"> Once you assign a value to it, you can't reassign a new value. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="type" name="q2" value="1">
+                        <label for="type"> It is necessary a variable of type : Nat or Int or Bool.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="update" name="q2" value="2">
+                        <label for="update"> It is a variable which state is preserved accross updates. </label>
+                    </div>
+                </div>
+
+
+                <div class="question-block">
+                    <h4> What is the freezing threshold of a canister?</h4>
+                    <div>
+                        <input type="radio" id="requests" name="q3" value="0" checked>
+                        <label for="requests"> The amount of requests that a single canister can process.   </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="power" name="q3" value="1">
+                        <label for="power"> The amount of CPU power allocated to a canister, that cannot be depassed or the canister will trap. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="algo" name="q3" value="2">
+                        <label for="algo"> The minimum number of seconds a canister must be able to sustain itself given the canister’s current size and the system’s current cost for storage. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> How can any user check the authenticity of the code inside a canister ? </h4>
+                    <div>
+                        <input type="radio" id="hash" name="q4" value="0" checked>
+                        <label for="hash">Using hash of the Wasm module inside a canister which is available through a public call. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="transparency" name="q4" value="1">
+                        <label for="transparency"> On the Internet Computer every code of every canister is transparent and public : you can check it. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="william" name="q4" value="2">
+                        <label for="nakamoto"> This is not possible for the moment. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> Is there a link between the principal of a user and his public key ?  </h4>
+                    <div>
+                        <input type="radio" id="nolink" name="q5" value="0" checked>
+                        <label for="nolink"> They are not related. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="interface" name="q5" value="1">
+                        <label for="musk"> The principal is the result of SHA256(Public Key).  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="programm" name="q5" value="2">
+                        <label for="nakamoto"> The principal is the result of SHA224(Public Key). </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What are cycles ?  </h4>
+                    <div>
+                        <input type="radio" id="no" name="q6" value="0" checked>
+                        <label for="no"> The number of instructions a canister can process in one second. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="yes" name="q6" value="1">
+                        <label for="yes"> A currency used to pay calculation and storage on the IC.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="depends" name="q6" value="2">
+                        <label for="depends"> The number of ICP staked inside a neuron. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4>How does the Internet Identity work ? </h4>
+                    <div>
+                        <input type="radio" id="purpose" name="q7" value="0" checked>
+                        <label for="purpose"> You delegate a short-term key session to an identity service provider built on top of the Internet Computer that will then connect to others applications and delegate again to each application a new session key. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="webassembly" name="q7" value="1">
+                        <label for="webassembly"> It keeps a list of all the services you use and all the identifiants for those services.</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gas" name="q7" value="2">
+                        <label for="gas"> It creates a single identity that all canisters can use freely, assuring full interopability between canisters.  </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What is one amazing feature of the IC possible because of ChainKey ?  </h4>
+                    <div>
+                        <input type="radio" id="state" name="q8" value="0" checked>
+                        <label for=""> The use of any language that compile to Wasm to create a canister module.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="scaling" name="q8" value="1">
+                        <label for="query"> The speed at which query call are executed.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="atomicity" name="q8" value="2">
+                        <label for="public">  One public key for the whole Internet Computer, which means you can easily authenticate any message coming from the IC. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What are catch-up packages ? </h4>
+                    <div>
+                        <input type="radio" id="subnet" name="q9" value="0" checked>
+                        <label for="subnet"> A feature that allows a canister to copy the state of another canister to help him scale. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="tokens" name="q9" value="1">
+                        <label for="tokens"> The state of a subnet that you can give to a new node to join this subnet at anypoint. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="center" name="q9" value="2">
+                        <label for="center"> The system of package management in Motoko. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> Are the blocks in any subnet stored forever ? </h4>
+                    <div>
+                        <input type="radio" id="storage" name="q10" value="0" checked>
+                        <label for="storage"> No and that's a main reason why the IC is far ahead in terms of cost of file storage relatively to any other blockhain out there. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="blockchain" name="q10" value="1">
+                        <label for="blockchain"> Of course they are, all blocks are linked to the previous one so you can't erase one without destroying the blockchain. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="nns" name="q10" value="2">
+                        <label for="nns">  For the NNS they are stored forever, for other applications they are not.  </label>
+                    </div>
+                </div>
+
+
+
+            
+            <button type="submit"> Submit your answers !</button>
+
+            <div class="resultats">
+                <h2 id="titleMotoko">Motoko School © 2021  </h2>
+                <p class="help"></p>
+                <p class="note"></p>
+            </div>  
+        </form>
+
+        <div class="stats" style="display: none !important;">
+            <div  id="baton0">
+                <div class="baton">
+                    <div class="text"> 15 %</div>
+                </div>
+                
+            </div>
+            <div  id="baton1">
+                <div class="baton">
+                    <div class="text"> 10%</div>
+                </div>
+                
+            </div>
+            <div  id="baton2">
+                <div class="baton">
+                    <div class="text">10 %</div>
+                </div>
+                
+            </div>
+            <div  id="baton3">
+                <div class="baton">
+                    <div class="text"></div>
+                </div>
+                
+            </div>
+            <div  id="baton4">
+                <div class="baton">
+                    <div class="text"></div>
+                </div>
+                
+            </div>
+            <div  id="baton5">
+                <div class="baton">
+                    <div class="text"></div>
+                </div>
+                
+            </div>
+            <div  id="baton6">
+                <div class="baton">
+                    <div class="text"></div>
+                </div>
+                
+            </div>
+            <div  id="baton7">
+                <div class="baton">
+                    <div class="text"></div>
+                </div>
+               
+            </div>
+            <div  id="baton8">
+                <div class="baton">
+                    <div class="text"></div>
+                </div>
+               
+            </div>
+            <div  id="baton9">
+                <div class="baton">
+                    <div class="text"></div>
+                </div>
+                
+            </div>
+            <div  id="baton10">
+                <div class="baton">
+                    <div class="text"> 15% </div>
+                </div>
+            </div>
+            <div  id="notes0"> 0/10 </div>
+            <div  id="notes1"> 1/10 </div>
+            <div  id="notes2"> 2/10 </div>
+            <div  id="notes3"> 3/10 </div>
+            <div  id="notes4"> 4/10 </div>
+            <div  id="notes5"> 5/10 </div>
+            <div  id="notes6"> 6/10</div>
+            <div  id="notes7"> 7/10</div>
+            <div  id="notes8"> 8/10 </div>
+            <div  id="notes9"> 9/10</div>
+            <div  id="notes10"> 10/10</div>
+        </div>
+
+        <h2 id="numberParticipants"> Number of participants : ? </h2>
+        <div id="hzld" style="display: none;">
+            <h1> How to get your hzld tokens ?</h1>
+            <p> You just need to copy and paste your hzld adress here and click on validate. 
+                Your will receive <b>100hzld</b> for participating :)</p>
+            <input type="text" id="name" name="name">
+            <button id="token"> Validate </button>
+    
+        </div>
+  </body>
+</html>

@@ -1,0 +1,506 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 30px 0;
+  font-size: 40px;
+}
+
+#hzld {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 15px 25px 25px;
+  margin: 20px;
+  text-align: center;
+}
+
+#hzld input {
+  width: 70%;
+  padding: 5px;
+  margin: 15px auto !important;
+  text-decoration: none;
+}
+
+.container-global {
+  width: 70%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  /* background-color: brown; */
+}
+
+.question-block {
+  padding: 15px 25px 25px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.question-block h4 {
+  padding: 7px 0px;
+  font-size: 18px;
+}
+
+.question-block input[type="radio"] {
+  transform: scale(1.7);
+  margin: 10px;
+}
+
+.resultats {
+  padding: 25px;
+  margin: 10px 0px 70px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.resultats h2 {
+  text-align: center;
+}
+
+.help {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.note {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  display: block;
+  margin: 25px auto;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: background-color 0.2 ease-in-out;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+#hidden-question-block {
+  padding: 15px 25px 25px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#hidden-question-block h4 {
+  padding: 7px 0px;
+  font-size: 18px;
+}
+
+#hidden-question-block input[type="radio"] {
+  transform: scale(1.7);
+  margin: 10px;
+}
+
+#hidden-question-block:hover {
+  opacity: 1;
+}
+
+#numberParticipants {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+  display: none;
+}
+.stats {
+  display: none;
+  margin-top: 50px;
+  margin-right: 50px;
+  border: 1px solid white;
+  width: 880px;
+  height: 400px;
+  background-color: ghostwhite;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+  grid-template-rows: 320px 80px;
+}
+
+:root {
+  --baton0: 10%;
+  --baton1: 10%;
+  --baton2: 10%;
+  --baton3: 10%;
+  --baton4: 10%;
+  --baton5: 10%;
+  --baton6: 10%;
+  --baton7: 10%;
+  --baton8: 10%;
+  --baton9: 10%;
+  --baton10: 10%;
+}
+
+#baton0 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border-right: 1px solid white;
+  border: 1px solid white;
+}
+
+#baton0 .baton {
+  background-color: gold;
+  height: var(--baton0);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton0 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+
+#baton1 .baton {
+  background-color: gold;
+  height: var(--baton1);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton1 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+
+#baton2 .baton {
+  background-color: gold;
+  height: var(--baton2);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton2 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+
+#baton3 .baton {
+  background-color: gold;
+  height: var(--baton3);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton3 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton4 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+
+#baton4 .baton {
+  background-color: gold;
+  height: var(--baton4);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton4 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton5 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+
+#baton5 .baton {
+  background-color: gold;
+  height: var(--baton5);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton5 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton6 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+
+#baton6 .baton {
+  background-color: gold;
+  height: var(--baton6);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton6 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton7 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+#baton7 .baton {
+  background-color: gold;
+  height: var(--baton7);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton7 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton8 {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+#baton8 .baton {
+  background-color: gold;
+  height: var(--baton8);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton8 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton9 {
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+#baton9 .baton {
+  background-color: gold;
+  height: var(--baton9);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton9 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#baton10 {
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: flex;
+  border: 1px solid white;
+}
+
+#baton10 .baton {
+  background-color: gold;
+  height: var(--baton10);
+  width: 70%;
+  align-self: flex-end;
+  margin: 0 auto;
+  position: relative;
+}
+
+#baton10 .baton .text {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+#notes0 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes4 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes5 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes6 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes7 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes8 {
+  grid-column-start: 9;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes9 {
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+#notes10 {
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  place-self: center;
+}

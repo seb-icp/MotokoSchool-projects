@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset = "UTF-8">
+        <title>IC quizz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="Title"> Internet Computer : Quizz ! </h1>
+        <div class="container-global">
+            <form class="quizz-form">
+                <div class="question-block">
+                    <h4> What type of canister call doesn't exist ? </h4>
+                    <div>
+                        <input type="radio" id="update" name="q1" value="a" checked>
+                        <label for="update"> Update call. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="submit" name="q1" value="b">
+                        <label for="submit"> Submit call. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="query" name="q1" value="c">
+                        <label for="query"> Query call. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What is the minimum number of replica nodes for a specific canister ? </h4>
+                    <div>
+                        <input type="radio" id="4" name="q2" value="a" checked>
+                        <label for="4"> 4. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="18" name="q2" value="b">
+                        <label for="18"> 18. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="7" name="q2" value="c">
+                        <label for="7"> 7. </label>
+                    </div>
+                </div>
+
+
+                <div class="question-block">
+                    <h4> What is a canister ?</h4>
+                    <div>
+                        <input type="radio" id="blockchain" name="q3" value="a" checked>
+                        <label for="blockchain"> A block in the IC blockchain.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="code" name="q3" value="b">
+                        <label for="code"> A fundamental building block of the Internet Computer where code and state live together. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="algo" name="q3" value="c">
+                        <label for="algo"> The algorithm responsible of the Internet Computer protocol. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> Who is the founder of Dfinity ? </h4>
+                    <div>
+                        <input type="radio" id="nakamoto" name="q4" value="a" checked>
+                        <label for="william"> Satoshi Nakamoto. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="musk" name="q4" value="b">
+                        <label for="musk"> Elon Musk. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="william" name="q4" value="c">
+                        <label for="nakamoto"> Dominic Williams. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What is Candid useful for ? </h4>
+                    <div>
+                        <input type="radio" id="state" name="q5" value="a" checked>
+                        <label for="state"> It allows you to see the current state of a specified canister. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="interface" name="q5" value="b">
+                        <label for="musk"> It provides an interface of the public methods of a canister, regardless of the language the canister is coded in.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="programm" name="q5" value="c">
+                        <label for="nakamoto"> It is a feature that automatically adjusts the number of canister your application needs in order to scale. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4>  How much is the canister memory limitation ?</h4>
+                    <div>
+                        <input type="radio" id="4" name="q6" value="a" checked>
+                        <label for="4"> 4 GB. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="20" name="q6" value="b">
+                        <label for="20"> 20 GB. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="infinity" name="q6" value="c">
+                        <label for="infinity"> 21 millions GB. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> Where does this limitation come from ? </h4>
+                    <div>
+                        <input type="radio" id="purpose" name="q7" value="a" checked>
+                        <label for="purpose"> It was implemented on purpose to improve the security of canisters.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="webassembly" name="q7" value="b">
+                        <label for="webassembly"> WebAssembly limitation. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gas" name="q7" value="c">
+                        <label for="gas"> Gas fees. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What does "orthogonal persistence" means ? </h4>
+                    <div>
+                        <input type="radio" id="state" name="q8" value="a" checked>
+                        <label for="state"> The state of canister is always living on the IC so it needs not to be saved in a database. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="scaling" name="q8" value="b">
+                        <label for="scaling"> It allows scaling by creating multiple canisters for one application. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="atomicity" name="q8" value="c">
+                        <label for="atomicity"> The fact that each update call is either successful and fully completed or it is an error and the canister's state remains unchanged. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What are neurons ? </h4>
+                    <div>
+                        <input type="radio" id="subnet" name="q9" value="a" checked>
+                        <label for="subnet"> A subnet regrouping nodes solving a task in common. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="tokens" name="q9" value="b">
+                        <label for="tokens"> ICP tokens locked for a period of time. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="center" name="q9" value="c">
+                        <label for="center"> A group of data centers. </label>
+                    </div>
+                </div>
+
+                <div class="question-block">
+                    <h4> What is not a Motoko feature ? </h4>
+                    <div>
+                        <input type="radio" id="structural" name="q10" value="a" checked>
+                        <label for="structural"> Structural-typing : when you create a new type it actually gives a name to an existing shape of type.  </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="variable" name="q10" value="b">
+                        <label for="variable"> Motoko requires you to explicitly indicate if a variable is mutable or not. </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="brain" name="q10" value="c">
+                        <label for="brain"> Auto-coding : every idea your brain can have, Motoko will code it for you.   </label>
+                    </div>
+                </div>
+
+
+
+            
+            <button type="submit"> Submit your answers !</button>
+        
+        </form>
+        <div class="resultats">
+            <h2>Motoko School © 2021  </h2>
+            <p class="help"></p>
+            <p class="note"></p>
+        </div>
+        <div id="hidden-question-block">
+            <h4> Secret question : where is the best place to learn Motoko ? </h4>
+            <div>
+                <input type="radio" id="Motokoschool" name="bonus" value="a" checked>
+                <label for="Motokoschool"> Wikipedia </label>
+            </div>
+            <div>
+                <input type="radio" id="Motokoschool" name="bonus" value="b">
+                <label for="Motokoschool"> Motoko School </label>
+            </div>
+            <div>
+                <input type="radio" id="Motokoschool" name="bonus" value="c">
+                <label for="Motokoschool"> Instagram </label>
+            </div>
+        </div>
+        </div>
+
+            
+        <script src="main.js"></script>
+    </body>
+    
+</html>
